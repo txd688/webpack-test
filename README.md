@@ -234,7 +234,9 @@ app.use('/', express.static(path.resolve(__dirname,"../dist")));
 app.listen(1001,function(){
   console.log('服务启动了!!!!');
 });
+```
 
+```
 //B项目
 // webpack.production.config.js
 const { ModuleFederationPlugin } = require("webpack").container;
