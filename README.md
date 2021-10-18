@@ -207,14 +207,12 @@ output.publicPath = '/static/'
 
 ### 动态加载代码和共享依赖
 
-B項目使用A項目模快内容
+B项目使用A项目模快内容
 ```
-// A項目
+// A项目
 //webpack.production.config.js
-const { ModuleFederationPlugin } = require("webpack").container;
-```
-const { ModuleFederationPlugin } = require("webpack").container;
 
+const { ModuleFederationPlugin } = require("webpack").container;
 publicPath:"http://localhost:1001/",//图片路径, 或者 "/dist/"
 //暴露方法
 new ModuleFederationPlugin({
@@ -237,7 +235,7 @@ app.listen(1001,function(){
   console.log('服务启动了!!!!');
 });
 
-//B項目
+//B项目
 // webpack.production.config.js
 const { ModuleFederationPlugin } = require("webpack").container;
 });
